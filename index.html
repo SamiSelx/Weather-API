@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--font-awesome -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/093104617b.js" crossorigin="anonymous"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <title>Weather | API</title>
+</head>
+<body>
+    <div class="weather">
+        <div class="search">
+            <!-- <i class="fa-solid fa-location-dot"></i> -->
+            <input type="text" placeholder="Enter Location" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="temperature">
+            <img src="" alt="load">
+            <div style="font-size: 2em;"><span class="temp-c"></span><sup>°C</sup></div>
+            <div class="codition-cloud" style="font-size: 1.8em; font-weight: 600;"></div>
+            <div class="hum-wind">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="humidity-info">
+                        <span class="humd-purc"></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="wind-info">
+                        <span class="wind-speed"></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="not-found">
+            <img src="img/404.png" alt="">
+            <p>Location Not Found, Try Again</p>
+        </div>
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
